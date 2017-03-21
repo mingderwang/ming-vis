@@ -2,7 +2,7 @@ export default function (kibana) {
   return new kibana.Plugin(
     {
       uiExports: {
-        visTypes: []
+        visTypes: ['plugins/ming/ming_vis']
       }
     }
   );
