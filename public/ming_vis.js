@@ -20,9 +20,14 @@ visTypes.register(
     template: mingCloudTemplate,
     params: {
       defaults: {
-        scale: 'linear'
+        scale: 'linear',
+        orientation: 'single',
+        minFontSize: 18,
+        maxFontSize: 72
       },
-      scales: ['linear', 'log', 'square root']
+      scales: ['linear', 'log', 'square root'],
+      orientations: ['single', 'right angled', 'multiple'],
+      editor: '<tagcloud-vis-params></tagcloud-vis-params>'
     },
     schemas: new Schemas([
       {
