@@ -4,6 +4,7 @@ import 'plugins/ming/ming_vis_params';
 import TemplateVisTypeTemplateVisTypeProvider from 'ui/template_vis_type/template_vis_type';
 import VisSchemasProvider from 'ui/vis/schemas';
 import mingCloudTemplate from 'plugins/ming/ming_controller.html';
+import mingCloudParamsTemplate from 'plugins/ming/ming_vis_params.html';
 import visTypes from 'ui/registry/vis_types';
 
 
@@ -27,7 +28,7 @@ visTypes.register(
       },
       scales: ['linear', 'log', 'square root'],
       orientations: ['single', 'right angled', 'multiple'],
-      editor: '<tagcloud-vis-params></tagcloud-vis-params>'
+      editor: mingCloudParamsTemplate
     },
     schemas: new Schemas([
       {

@@ -6,13 +6,13 @@ import 'no-ui-slider/css/nouislider.pips.css';
 import 'no-ui-slider/css/nouislider.tooltips.css';
 
 uiModules.get('kibana/ming_vis')
-  .directive('mingcloudVisParams', function () {
+  .directive('mingVisParams', function () {
     return {
       restrict: 'E',
       template: mingCloudVisParamsTemplate,
       link: function ($scope, $element) {
         const sliderContainer = $element[0];
-        const slider = sliderContainer.querySelector('.tag-cloud-fontsize-slider');
+        const slider = sliderContainer.querySelector('.ming-fontsize-slider');
         noUiSlider.create(slider, {
           start: [$scope.vis.params.minFontSize, $scope.vis.params.maxFontSize],
           connect: true,
